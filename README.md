@@ -24,10 +24,10 @@ docker compose ps
 
 This project includes comprehensive documentation in the `docs/` directory:
 
-- **[Usage Guide](docs/usage.md)** - How to use the database, common operations, and application integration
-- **[Security Guide](docs/security.md)** - Security architecture, best practices, and hardening measures
-- **[Backup Guide](docs/backup.md)** - Automated backups, recovery procedures, and retention policies
-- **[Troubleshooting Guide](docs/troubleshooting.md)** - Common issues, debugging, and resolution steps
+- **[Usage Guide](https://github.com/euemm/euem_postgres/blob/main/docs/usage.md)** - How to use the database, common operations, and application integration
+- **[Security Guide](https://github.com/euemm/euem_postgres/blob/main/docs/security.md)** - Security architecture, best practices, and hardening measures
+- **[Backup Guide](https://github.com/euemm/euem_postgres/blob/main/docs/backup.md)** - Automated backups, recovery procedures, and retention policies
+- **[Troubleshooting Guide](https://github.com/euemm/euem_postgres/blob/main/docs/troubleshooting.md)** - Common issues, debugging, and resolution steps
 
 For detailed information on any topic, please refer to the appropriate documentation file.
 
@@ -148,7 +148,7 @@ docker compose start
 docker compose restart db
 ```
 
-For more detailed operations, see the [Usage Guide](docs/usage.md).
+For more detailed operations, see the [Usage Guide](https://github.com/euemm/euem_postgres/blob/main/docs/usage.md).
 
 ## Project Structure
 
@@ -171,10 +171,10 @@ euem_postgres/
 
 ## Getting Help
 
-- **Having issues?** Check the [Troubleshooting Guide](docs/troubleshooting.md)
-- **Security questions?** Review the [Security Guide](docs/security.md)
-- **Need to backup/restore?** See the [Backup Guide](docs/backup.md)
-- **General usage?** Read the [Usage Guide](docs/usage.md)
+- **Having issues?** Check the [Troubleshooting Guide](https://github.com/euemm/euem_postgres/blob/main/docs/troubleshooting.md)
+- **Security questions?** Review the [Security Guide](https://github.com/euemm/euem_postgres/blob/main/docs/security.md)
+- **Need to backup/restore?** See the [Backup Guide](https://github.com/euemm/euem_postgres/blob/main/docs/backup.md)
+- **General usage?** Read the [Usage Guide](https://github.com/euemm/euem_postgres/blob/main/docs/usage.md)
 
 ---
 
