@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16-alpine
+    platform: linux/arm64    # t4g Graviton
+    container_name: postgres16
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - TZ=UTC
+      - POSTGRES_INITDB_ARGS=--data-checksums --encoding=UTF8 --locale=C
+      - ALLOWED_CLIENT=${ALLOWED_CLIENT}
+    command:
+      # Listen on all interfaces for remote clients; other tuning can be added here
+      - -c
+      - listen_addresses=*
+      - -c
+      - max_connections=50
+      - -c
+      - shared_buffers=128MB
+    volumes:
+      - /srv/postgres/data:/var/lib/postgresql/data
+      - /srv/postgres/pg-init:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"   # expose; we’ll still firewall it
+    shm_size: "512m"  # important for Postgres performance
